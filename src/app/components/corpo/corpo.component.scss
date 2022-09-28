@@ -61,6 +61,7 @@ h2{
   display: grid;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
 .body, .section-serv {
@@ -71,10 +72,11 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
-  font-family: sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 
-  width: 100vw;
+  //width: 100vw;
   background-color: #171717;
 
   &__title {
@@ -137,4 +139,8 @@ h2{
   100% {
     transform: translateY(nth($steps, length($steps)));
   }
+}
+
+img{
+  max-width: 10rem;
 }
