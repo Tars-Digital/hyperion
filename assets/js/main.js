@@ -1,9 +1,3 @@
-/**
-* Template Name: UpConstruction - v1.2.0
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -15,6 +9,24 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', () => {
       preloader.remove();
     });
+  }
+
+  const btnOcorrenciaConcluida = document.getElementById("carrosel");
+  const windowSize = window.innerWidth;
+
+  if (windowSize > 600) {
+    btnOcorrenciaConcluida.className = "";
+  } else {
+    btnOcorrenciaConcluida.className = "hide";
+  }
+
+  const qs = document.getElementById("quemSomos");
+
+  if(windowSize > 800) {
+    qs.className = "col-12";
+    console.log("é maior")
+  } else{
+    qs.className = "col-12";
   }
 
   /**
